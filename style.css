@@ -5,7 +5,6 @@
 
 .main{
     display: flex;
-    border: 1px solid red;
     height: 100vh;
     background-color: black;
     
@@ -21,7 +20,34 @@
     color: #fff;
 }
 
+.main-slide{
+    background-color: aqua;
+    width: 100px;
+    height: 80px;
+    color: #000;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+
 .main-img{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     /* width: 10%; */
+    
+}
+.main-img img{
+    width: 200px;
+    height: 400px;
+    margin-top: ;
+    margin-left: 300px;
+}
+
+@keyframes moving
+{
+    0%{background-color: red;left: 0px; top: 0px; }
+    25%{background-color: yellow;left: 200px;top: 0px;}
+    50%{background-color: blue;left: 200px;top: 200px;}
+    75%{background-color: green;left: 0px;top: 200px;}
+    100%{background-color: orange;left: 0px;top: 0px;}
 }
